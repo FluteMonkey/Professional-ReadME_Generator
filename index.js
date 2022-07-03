@@ -142,7 +142,7 @@ function initialize(){
     inquirer.prompt(questions)
     .then(function(userInput){
         console.log(userInput);
-        writeREADME('README.md', generateMarkdown(userInput))
+        writeREADME('SAMPLEREADME.md', generateMarkdown(userInput))
     });
 }
 
