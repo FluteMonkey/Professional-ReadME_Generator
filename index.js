@@ -127,14 +127,23 @@ const questions = [
 ];
 
 //function to write README
-function writeREADME(filename, data){}
+function writeREADME(filename, data){
+    fs.writeFile(filename, data, (err) =>{
+        if (err) 
+            throw err;
+        console.log('Success! Information transferred to the README!')
+    
+    });
+    generateMarkdown(data)
+}
 
 //function to initialize application
 function initialize(){
     inquirer.prompt(questions)
     .then(function(userInput){
         console.log(userInput);
-    })
+        writeREADME('README.md', generateMarkdown(userInput))
+    });
 }
 
 //call initialize function
