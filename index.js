@@ -122,7 +122,7 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Would you like to include your email?',
+        message: 'Would you like to include your email? enter here:',
     },
 ];
 
@@ -130,7 +130,12 @@ const questions = [
 function writeREADME(filename, data){}
 
 //function to initialize application
-function initialize(){}
+function initialize(){
+    inquirer.prompt(questions)
+    .then(function(userInput){
+        console.log(userInput);
+    })
+}
 
 //call initialize function
 initialize();
