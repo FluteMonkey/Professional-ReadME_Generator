@@ -7,8 +7,8 @@
   - [Additional Info](#Additional-Information)
 
   ## Visual Presentation
-  ![Professional Readme Generator Demo]
-
+  ![Professional Readme Generator Demo](./Demo/Demo.gif)
+  
   ## Description:
   
   - WHEN I am prompted for information about my application repositor
@@ -37,4 +37,5 @@
   - On success a README.md will be generated.
 
   ## Additional Information:
-  
+    - Github: [FluteMonkey](https://github.com/FluteMonkey)
+    - Email: z.c.chun2003@gmail.com 
